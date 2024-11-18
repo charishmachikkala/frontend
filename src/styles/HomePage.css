@@ -1,0 +1,385 @@
+/* General Body Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+.containerr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header Styles */
+.title {
+  width: 100%;
+  height: 110px; /* Reduced height */
+  background-color: #A18CD1;
+  padding: 5px 20px; /* Reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.logo1 img {
+  width: 150px; /* Increased logo size */
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .logo1 img {
+    width: 120px; /* Slightly smaller logo for small screens */
+  }
+}
+
+/* Main Navbar Styles */
+.main-navbar ul {
+  display: flex;
+  gap: 40px; /* Reduced gap between nav items */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.main-navbar li {
+  font-size: 20px; /* Reduced font size */
+  cursor: pointer;
+  position: relative; /* For positioning the hover underline */
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Hover effect for navbar links */
+.main-navbar li:hover {
+  color: #563b9f; /* Change text color on hover */
+}
+
+/* Underline effect on hover */
+.main-navbar li::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: #563b9f; /* Underline color */
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s ease; /* Smooth transition for the underline */
+}
+
+.main-navbar li:hover::after {
+  width: 100%; /* Full width underline when hovering */
+}
+
+/* Get Started Button */
+.get-started {
+  background-color: #6B52AE;
+  padding: 8px 15px; /* Reduced padding */
+  font-size: 18px; /* Reduced font size */
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add smooth transition */
+}
+
+.get-started:hover {
+  background-color: #563b9f; /* Change background color */
+  transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Responsive Header for Small Screens */
+@media (max-width: 768px) {
+  .title {
+    height: 90px; /* Further reduced height for small screens */
+    padding: 5px 10px; /* Reduced padding */
+  }
+
+  .main-navbar ul {
+    gap: 20px; /* Reduced gap further */
+  }
+
+  .main-navbar li {
+    font-size: 18px; /* Reduced font size */
+  }
+
+  .get-started {
+    padding: 5px 10px; /* Further reduced padding */
+    font-size: 16px; /* Smaller font for button */
+  }
+
+  .logo1 img {
+    width: 80px; /* Smaller logo for smaller screens */
+  }
+}
+
+/* Main Section Styles */
+.main-section {
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row; /* Content and image side by side */
+  justify-content: space-between; /* Adds space between text and images */
+  align-items: center;
+  max-width: 1200px; /* Optional: Restrict the width of the content */
+  width: 100%;
+}
+
+.intro {
+  flex: 1; /* Let the text content take 50% of the space */
+  padding-right: 20px; /* Space between text and image */
+}
+
+.intro h1 {
+  font-size: 48px;
+  color: #4D3A7A;
+}
+
+.intro span {
+  color: #7A6EB0;
+}
+
+.intro p {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.intro button {
+  background-color: #7A6EB0;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.intro button:hover {
+  background-color: #6b52ae;
+}
+
+/* Data Icons Section */
+.data-icons {
+  display: flex;
+  gap: 20px; /* Space between each icon */
+  flex: 1; /* Let the icons take 50% of the space */
+}
+
+.data-icons img {
+  width: 45vw;
+  height: 70vh;
+  background-size: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add smooth transition */
+}
+
+.data-icons img:hover {
+  transform: scale(1.1); /* Slightly enlarge the icon on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+
+.data-icons:hover {
+  cursor: pointer; /* Change cursor to pointer when hovering over icons */
+}
+
+/* Responsive Main Section */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column; /* Stack content and image on smaller screens */
+    text-align: center;
+  }
+
+  .intro {
+    padding-right: 0;
+  }
+
+  .data-icons {
+    margin-top: 20px;
+  }
+}
+
+/* About Us Section */
+.about-us1 {
+  width: 100%;
+  background-color: #F5F2FC;
+  padding: 0px 0;
+  text-align: center;
+}
+
+.about-us1 h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  height: 100vh;
+  flex-wrap: wrap; /* Allows the cards to wrap to the next line */
+}
+
+.card1 {
+  width: 300px;
+  height: 410px;
+  border-radius: 10px;
+  background-image: url("../images/about us.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  margin-top: 70px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.card1:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15); /* Enhanced shadow effect */
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    gap: 40px; /* Reduce gap for medium screens */
+  }
+  .card1 {
+    width: 250px; /* Adjust card width */
+    height: 350px; /* Adjust card height */
+  }
+}
+
+@media (max-width: 992px) {
+  .cards {
+    gap: 30px; /* Further reduce gap */
+  }
+  .card1 {
+    width: 220px; /* Adjust card width */
+    height: 320px; /* Adjust card height */
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column; /* Stack cards vertically on small screens */
+    align-items: center; /* Center cards horizontally */
+    gap: 20px; /* Reduce gap for small screens */
+  }
+  .card1 {
+    width: 90%; /* Make cards take up 90% width */
+    height: auto; /* Adjust height to auto */
+    margin-top: 20px; /* Adjust top margin */
+  }
+}
+
+/* Team Section */
+.team-slider {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ourteam {
+  text-align: center;
+  font-family: "roboto";
+  margin: 25px;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.team-slider img {
+  width: 850px; /* Fixed width */
+  height: 450px; /* Fixed height */
+  object-fit: cover; /* Ensures the image maintains aspect ratio while covering the box */
+  border-radius: 8px;
+  transition: opacity 0.5s ease;
+}
+
+.arrow {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  z-index: 10;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Footer Styles */
+.footer1 {
+  background-color: #6b52ae;
+  padding: 20px 10px;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 85px;
+  position: relative; /* Removed fixed positioning */
+}
+
+.footer-containerr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100vw;
+  height: 15vh;
+}
+
+.footer-logo img {
+  width: 120px;
+  margin-left: 60px;
+  margin-top: 40px;
+}
+
+.footer-details {
+  text-align: center;
+  font-size: 14px;
+}
+
+.footer-details p {
+  margin-right: 130px;
+}
+
+.social-media {
+  display: flex;
+  gap: 30px;
+}
+
+.social-media a {
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 18px;
+  margin-top: 5px;
+  text-decoration: underline;
+  transition: color 0.3s ease, text-decoration 0.3s ease; /* Smooth transition */
+}
+
+.social-media a:hover {
+  color: #d4cde4; /* Lighter color on hover */
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.footer-bottom-text {
+  font-size: 20px;
+  margin-top: 60px;
+}

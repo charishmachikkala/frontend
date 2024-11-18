@@ -1,0 +1,164 @@
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f9fc; /* Light background color */
+}
+
+/* Header Styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #A18CD1; /* Lavender color */
+  padding: 20px;
+  color: white;
+}
+
+.header .logo {
+  display: flex;
+  align-items: center;
+}
+
+.header .logo img {
+  width: 90px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  gap: 15px; /* Reduced the gap between navbar items */
+  background-color: transparent !important; /* Ensure background is transparent */
+  padding: 0; /* Remove any padding that may cause unwanted backgrounds */
+  margin: 0; /* Remove margins that might be adding space or unwanted background */
+}
+
+/* Navbar link styles */
+.navbar .nav-link {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 5px 9px; /* Adjust padding for better spacing */
+  border-radius: 5px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Navbar link hover effect */
+.navbar .nav-link:hover {
+  background-color: #6B52AE; /* Darker shade of purple */
+  transform: scale(1.05); /* Slight zoom-in effect */
+}
+
+.navbar .nav-link span {
+  margin-left: 5px; /* Adds space between icon and text */
+}
+
+/* Increased icon size in the navbar */
+.navbar .nav-link i {
+  font-size: 24px; /* Increased font size for the icon */
+  margin-right: 8px; /* Adds spacing between the icon and the text */
+}
+
+/* Summary Section Styles */
+.summary {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.summary-containerrr {
+  background-color: #f0e9ff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 25%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.summary-containerrr:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+.summary-containerrr h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.summary-containerrr span {
+  display: block;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* Increased size of icons */
+.icon-containerrr {
+  font-size: 60px; /* Increased icon size */
+  color: #A18CD1;
+  margin-bottom: 10px;
+  transition: color 0.3s ease; /* Smooth color transition for icons */
+}
+
+/* Hover effect for icons inside the summary section */
+.summary-containerrr:hover .icon-containerrr {
+  color: #6B52AE; /* Change icon color on hover */
+}
+
+/* Graphs Section */
+.graphs {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
+.graph {
+  background-color: #f0e9ff;
+  border-radius: 12px;
+  padding: 20px;
+  width: 45%;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.graph:hover {
+  transform: translateY(-5px); /* Slight lift effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+.graph img {
+  max-width: 150px;
+  border-radius: 8px;
+  transition: transform 0.3s ease; /* Smooth transition for image scale */
+}
+
+/* Hover effect for graphs */
+.graph:hover img {
+  transform: scale(1.05); /* Slight zoom-in effect for images */
+}
+
+/* Footer */
+.footer {
+  background-color: #3b5998; /* Blue color for footer */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  width: 100%;
+  transition: background-color 0.3s ease; /* Smooth transition for background color */
+}
+
+.footer:hover {
+  background-color: #2d4373; /* Darker blue shade when hovering over the footer */
+}
+
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}

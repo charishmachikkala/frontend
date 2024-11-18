@@ -1,0 +1,117 @@
+.mainpage {
+    font-family: 'Arial', sans-serif; /* Base font for the page */
+    background-color: #f7f9fc; /* Light background color for the main page */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Base text color */
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo img {
+    width: 50px; /* Fixed width for logo */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Spacing between logo image and text */
+  }
+  
+  /* Updated Navbar */
+  .navbar {
+    display: flex;
+    gap: 20px; /* Space between navbar items */
+    background-color: #333; /* Dark background for navbar */
+   
+    justify-content: space-around; /* Distribute items evenly */
+    position: relative; /* No longer fixed, navbar moves with the page */
+    width: 100%; /* Full width for navbar */
+  }
+  
+  .navbar a {
+    text-decoration: none; /* Remove underline from links */
+    color: #ffffff; /* Link color */
+    font-weight: bold; /* Bold font for links */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .navbar a:hover {
+    color: #a14fff; /* Hover color for navbar links */
+  }
+  
+  .content {
+    padding: 30px; /* Padding around the main content area */
+  }
+  
+  h2 {
+    color: #333; /* Heading color */
+    font-size: 24px; /* Font size for headings */
+    margin-bottom: 20px; /* Space below headings */
+  }
+  
+  .summary {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px; /* Space below summary section */
+  }
+  
+  .summary-containerr {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between icon and text */
+    padding: 20px; /* Padding inside summary boxes */
+    background-color: #ffffff; /* Background for summary boxes */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex: 1; /* Allow summary containers to grow */
+    margin: 0 10px; /* Margin between summary items */
+    min-width: 200px; /* Minimum width for summary containers */
+  }
+  
+  .icon-containerr {
+    font-size: 40px; /* Increased icon size */
+    color: #3b5998; /* Icon color matching header */
+  }
+  
+  .summary-containerr p {
+    font-size: 24px; /* Increased font size for numbers */
+    font-weight: bold; /* Bold font for numbers */
+    margin: 0; /* Remove default margin */
+  }
+  
+  .summary-containerr span {
+    color: #888; /* Color for labels */
+    font-size: 16px; /* Font size for labels */
+  }
+  
+  .graphs {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .graph {
+    padding: 20px; /* Padding inside graph boxes */
+    background-color: #ffffff; /* Background color for graph sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    flex: 2; /* Allow graphs to grow */
+    margin: 60 140px; /* Margin between graph items */
+  }
+  
+  .graph img {
+    max-width: 100%; /* Ensure graphs are responsive */
+    border-radius: 8px; /* Rounded corners for images */
+  }
+  
+  .footer {
+    text-align: bottom;
+    padding: 20px; /* Padding around footer */
+    background-color: #A18CD1; /* Footer background color */
+    color: #ffffff; /* Text color for the footer */
+    margin-top: 170px; /* Space above footer */
+    position: relative; /* Position for proper stacking */
+    bottom: 0;
+    width: 100%; /* Full width for footer */
+    font-size: 14px; /* Font size for footer text */
+  }
+  

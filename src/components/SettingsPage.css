@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+  }
+  
+  .header {
+    background-color: #A78BFA;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .header img {
+    height: 50px;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;  /* Further increased gap for a more extended navbar */
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+  
+  .nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .container {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Spread out containers */
+    gap: 20px;
+    justify-items: center;
+    margin-top: 100px;  /* Increased margin to ensure no overlap with the navbar */
+  }
+  
+  .card {
+    background-color: #F3E8FF;
+    border-radius: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 70px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card .circle {
+    width: 60px;  /* Increased size for a perfect circle */
+    height: 60px;
+    background-color: #A78BFA;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;  /* Adjusted font size to fit in the circle */
+  }
+  
+  .card .content {
+    flex-grow: 1;
+    margin-left: 20px;
+    font-size: 16px;
+  }
+  
+  .card .edit-btn {
+    background-color: #A78BFA;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer {
+    background-color: #A78BFA;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  /* Logout Button */
+  .logout-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background-color: #C0392B;
+  }
+  
